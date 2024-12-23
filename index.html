@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- <header> -->
+    <div class="container">
+            <h1>Event Management Dashboard</h1>
+    </div>
+            <!-- <button id="addEventBtn" class="btn-primary">Add New Event</button> -->
+        <!-- </header> -->
+
+        <main>
+            <div class="events-section">
+                <h2>Events</h2>
+                <button id="addEventBtn" class="btn-primary">Add New Event</button>
+                <div id="eventsList" class="events-list"></div>
+            </div>
+            <!-- <h2>Event Details</h2> -->
+            <div class="details-section hidden" id="eventDetails">
+                <h2>Event Details</h2>
+                <div class="event-info"></div>
+                
+                <div class="attendees-section">
+                    <h3>Attendees</h3>
+                    <button id="addAttendeeBtn" class="btn-secondary"><a href="http://127.0.0.1:5500/index.html" > Go to Attendee Page</a></button>
+                    <div id="attendeesList" class="attendees-list"></div>
+                </div>
+                
+                <div class="details-section hidden" id="eventDetails">
+                    <h2>Event Details</h2>
+                    <div class="event-info"></div>
+
+                <div class="tasks-section">
+                    <h3>Tasks</h3>
+                    <button id="addTaskBtn" class="btn-secondary"><a href="http://127.0.0.1:5503/index.html">Go To Task Page</a></button>
+                    <div id="tasksList" class="tasks-list"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Templates -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
